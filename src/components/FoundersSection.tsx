@@ -5,12 +5,12 @@ const foundingPrinciples = [
   {
     icon: Award,
     title: "25+ Years of Excellence",
-    description: "Decades of proven experience in AI and data analytics consulting across public and private sectors."
+    description: "Decades of proven experience delivering enterprise AI and data analytics solutions across diverse industries."
   },
   {
     icon: Briefcase,
-    title: "Strategic Partnership",
-    description: "Leveraging world-class expertise from Kaiforma Inc., a premier consulting firm based in Ottawa, Canada."
+    title: "Canadian Expertise",
+    description: "Founded by seasoned professionals with deep expertise in both public and private sector AI implementations."
   },
   {
     icon: Users,
@@ -30,8 +30,8 @@ export const FoundersSection = () => {
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
             KaiAion is founded by a team of seasoned AI solutions architects and consulting professionals 
             who bring over 25 years of combined expertise to the forefront of artificial intelligence innovation. 
-            Our leadership team maintains strategic partnerships with industry leaders, ensuring access to 
-            world-class talent and proven methodologies.
+            Our leadership team has successfully delivered enterprise-grade solutions across public and private sectors, 
+            establishing KaiAion as a trusted partner for transformational AI initiatives.
           </p>
         </div>
 
@@ -53,10 +53,10 @@ export const FoundersSection = () => {
           <div className="text-center">
             <h3 className="text-2xl font-semibold mb-4">Our Foundation of Excellence</h3>
             <p className="text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Through our strategic alliance with established industry leaders, KaiAion delivers enterprise-grade 
-              AI solutions with the agility of an innovative startup. Our founders' extensive background in 
+              KaiAion's founding team brings together decades of experience in enterprise AI implementations, 
+              combining deep technical expertise with strategic business acumen. Our mastery of 
               <span className="text-primary font-medium"> Automation, Analytics, and Artificial Intelligence</span> 
-              ensures that every client engagement is backed by proven methodologies and deep technical expertise.
+              ensures that every client engagement delivers measurable results and lasting transformation.
             </p>
           </div>
         </div>
