@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import aiNetworkImage from "@/assets/ai-network.jpg";
 import { 
   Cpu, 
@@ -195,8 +196,10 @@ export const TechnologySection = () => {
       </div>
       
       <div className="text-center mt-12">
-        <Button variant="tech" size="lg">
-          Discover Our Technology Stack
+        <Button variant="tech" size="lg" asChild>
+          <Link to="/technology-stack">
+            Discover Our Technology Stack
+          </Link>
         </Button>
       </div>
     </section>

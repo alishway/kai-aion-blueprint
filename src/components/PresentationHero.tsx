@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import heroBackground from "@/assets/hero-background.jpg";
 
 export const PresentationHero = () => {
@@ -34,11 +35,15 @@ export const PresentationHero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-6">
-              Explore Our Solutions
+            <Button variant="hero" size="lg" className="text-lg px-8 py-6" asChild>
+              <Link to="/solutions">
+                Explore Our Solutions
+              </Link>
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-6">
-              Schedule Consultation
+            <Button variant="outline" size="lg" className="text-lg px-8 py-6" asChild>
+              <Link to="/schedule-consultation">
+                Schedule Consultation
+              </Link>
             </Button>
           </div>
         </div>

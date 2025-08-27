@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
 import dataCenterImage from "@/assets/data-center.jpg";
 import { 
   Lightbulb, 
@@ -193,8 +194,10 @@ export const ServicesSection = () => {
             and drive sustainable competitive advantage.
           </p>
         </div>
-        <Button variant="hero" size="lg" className="text-lg px-12 py-6">
-          Schedule Strategy Session
+        <Button variant="hero" size="lg" className="text-lg px-12 py-6" asChild>
+          <Link to="/schedule-consultation">
+            Schedule Strategy Session
+          </Link>
         </Button>
       </div>
     </section>

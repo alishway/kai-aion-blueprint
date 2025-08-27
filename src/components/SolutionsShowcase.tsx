@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
 import auroraImage from "@/assets/aurora-dashboard.png";
 import vocasenseImage from "@/assets/vocasense-hero.png";
 import nexusImage from "@/assets/nexus-dashboard.png";
@@ -120,8 +121,10 @@ export const SolutionsShowcase = () => {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-3">
-                <Button variant="outline" size="lg">
-                  Learn More
+                <Button variant="outline" size="lg" asChild>
+                  <Link to="/our-approach">
+                    Learn More
+                  </Link>
                 </Button>
               </div>
             </div>
@@ -142,8 +145,10 @@ export const SolutionsShowcase = () => {
       </div>
       
       <div className="text-center mt-16">
-        <Button variant="hero" size="lg" className="text-lg px-12 py-6">
-          Explore All Solutions
+        <Button variant="hero" size="lg" className="text-lg px-12 py-6" asChild>
+          <Link to="/solutions">
+            Explore All Solutions
+          </Link>
         </Button>
       </div>
     </section>
