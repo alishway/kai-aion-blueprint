@@ -1,5 +1,6 @@
 import { PresentationHero } from "@/components/PresentationHero";
 import { WhyChooseSection } from "@/components/WhyChooseSection";
+import { FoundersSection } from "@/components/FoundersSection";
 import { SolutionsShowcase } from "@/components/SolutionsShowcase";
 import { TechnologySection } from "@/components/TechnologySection";
 import { ServicesSection } from "@/components/ServicesSection";
@@ -13,6 +14,9 @@ const Index = () => {
       
       {/* Why Choose KaiAion */}
       <WhyChooseSection />
+      
+      {/* Who We Are */}
+      <FoundersSection />
       
       {/* Solutions Showcase */}
       <SolutionsShowcase />
