@@ -120,9 +120,6 @@ export const SolutionsShowcase = () => {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-3">
-                <Button variant="default" size="lg">
-                  Request Demo
-                </Button>
                 <Button variant="outline" size="lg">
                   Learn More
                 </Button>

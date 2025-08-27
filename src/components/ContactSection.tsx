@@ -11,13 +11,6 @@ const contactMethods = [
     highlight: true
   },
   {
-    icon: MessageSquare,
-    title: "Request Demo",
-    description: "See our flagship solutions in action",
-    action: "Get Demo",
-    highlight: false
-  },
-  {
     icon: Users,
     title: "Partner Inquiry",
     description: "Explore collaboration opportunities",
@@ -55,12 +48,12 @@ export const ContactSection = () => {
           Ready to Transform with <span className="gradient-text">AI</span>?
         </h2>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-          Get in touch with our experts to discuss your needs, request demos, 
-          or explore collaboration opportunities that will drive your organization forward.
+          Get in touch with our experts to discuss your needs and explore 
+          collaboration opportunities that will drive your organization forward.
         </p>
       </div>
       
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
         {contactMethods.map((method, index) => (
           <Card key={index} className={`tech-card group text-center ${method.highlight ? 'ring-2 ring-primary/20' : ''}`}>
             <CardHeader className="space-y-4">
