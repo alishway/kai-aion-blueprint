@@ -130,13 +130,12 @@ export const SolutionsShowcase = () => {
             </div>
             
             <div className={`${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
-              <Card className="tech-card overflow-hidden bg-background/40 backdrop-blur-sm border-primary/20">
-                <CardContent className="p-0 relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-background/80 z-10" />
+              <Card className="tech-card overflow-hidden">
+                <CardContent className="p-0">
                   <img 
                     src={solution.image} 
                     alt={`${solution.title} Dashboard`}
-                    className="w-full h-auto rounded-lg object-cover mix-blend-screen opacity-90 contrast-110 brightness-105"
+                    className="w-full h-auto rounded-lg object-cover"
                   />
                 </CardContent>
               </Card>

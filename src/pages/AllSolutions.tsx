@@ -219,12 +219,11 @@ const AllSolutions = () => {
                       </div>
                     </div>
                     
-                    <div className="relative bg-background/40 backdrop-blur-sm border border-primary/20 rounded-r-lg overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-background/80 z-10" />
+                    <div className="relative">
                       <img 
                         src={solution.image} 
                         alt={`${solution.title} Interface`}
-                        className="w-full h-full object-cover mix-blend-screen opacity-90 contrast-110 brightness-105"
+                        className="w-full h-full object-cover rounded-r-lg"
                       />
                     </div>
                   </div>
