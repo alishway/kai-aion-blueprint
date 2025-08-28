@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mail, Phone, MapPin, Calendar, MessageSquare, Users } from "lucide-react";
+import { Calendar, Users } from "lucide-react";
 
 const contactMethods = [
   {
@@ -19,26 +19,6 @@ const contactMethods = [
   }
 ];
 
-const contactInfo = [
-  {
-    icon: Mail,
-    label: "Email",
-    value: "hello@kaiaion.com",
-    link: "mailto:hello@kaiaion.com"
-  },
-  {
-    icon: Phone,
-    label: "Phone",
-    value: "+1 (555) 123-4567",
-    link: "tel:+15551234567"
-  },
-  {
-    icon: MapPin,
-    label: "Headquarters",
-    value: "Toronto, Canada",
-    link: null
-  }
-];
 
 export const ContactSection = () => {
   return (
@@ -74,97 +54,17 @@ export const ContactSection = () => {
                 variant={method.highlight ? "hero" : "outline"} 
                 size="lg" 
                 className="w-full"
+                asChild
               >
-                {method.action}
+                {method.highlight ? (
+                  <a href="/schedule-consultation">{method.action}</a>
+                ) : (
+                  <a href="mailto:Jeff.Kolako@KaiAion.ai?subject=Partnership Inquiry">{method.action}</a>
+                )}
               </Button>
             </CardContent>
           </Card>
         ))}
-      </div>
-      
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-        <Card className="tech-card">
-          <CardHeader>
-            <CardTitle className="text-2xl mb-4">Get in Touch</CardTitle>
-            <CardDescription className="text-lg">
-              Connect with our team to explore how KaiAion can accelerate your AI transformation
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-6">
-            {contactInfo.map((info, index) => (
-              <div key={index} className="flex items-center space-x-4">
-                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <info.icon className="w-5 h-5 text-primary" />
-                </div>
-                <div>
-                  <p className="font-semibold">{info.label}</p>
-                  {info.link ? (
-                    <a 
-                      href={info.link} 
-                      className="text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      {info.value}
-                    </a>
-                  ) : (
-                    <p className="text-muted-foreground">{info.value}</p>
-                  )}
-                </div>
-              </div>
-            ))}
-          </CardContent>
-        </Card>
-        
-        <Card className="tech-card">
-          <CardHeader>
-            <CardTitle className="text-2xl mb-4">What Happens Next?</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-6">
-            <div className="space-y-4">
-              <div className="flex items-start space-x-4">
-                <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-sm flex-shrink-0">
-                  1
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-1">Initial Consultation</h4>
-                  <p className="text-muted-foreground text-sm">
-                    We'll discuss your challenges, objectives, and current AI readiness
-                  </p>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-4">
-                <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-sm flex-shrink-0">
-                  2
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-1">Solution Design</h4>
-                  <p className="text-muted-foreground text-sm">
-                    Our experts will design a tailored AI strategy and implementation plan
-                  </p>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-4">
-                <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-sm flex-shrink-0">
-                  3
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-1">Implementation</h4>
-                  <p className="text-muted-foreground text-sm">
-                    We'll execute the plan with continuous monitoring and optimization
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-            <div className="pt-4 border-t border-border/50">
-              <p className="text-sm text-muted-foreground">
-                <strong>Typical Response Time:</strong> Within 24 hours<br />
-                <strong>Initial Consultation:</strong> Complimentary 60-minute session
-              </p>
-            </div>
-          </CardContent>
-        </Card>
       </div>
       
       <div className="text-center mt-16 p-8 rounded-2xl bg-gradient-to-r from-primary/10 via-accent/5 to-primary/10 border border-primary/20">
